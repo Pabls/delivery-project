@@ -1,3 +1,148 @@
 <resources>
+    //Common strings
     <string name="app_name">delivery</string>
+    <string name="common_empty"></string>
+    <string name="common_plus">+</string>
+    <string name="common_minus">-</string>
+    <string name="common_rubles">₽</string>
+    <string name="common_number">№</string>
+    <string name="common_count">шт.</string>
+    <string name="common_weight">гр.</string>
+
+    <plurals name="prices_in_rubles">
+        <item quantity="zero">%1$d рублей</item>
+        <item quantity="one">%1$d рубль</item>
+        <item quantity="two">%1$d рубля</item>
+        <item quantity="few">%1$d рублей</item>
+        <item quantity="many">%1$d рублей</item>
+        <item quantity="other">%1$d рублей</item>
+    </plurals>
+
+    //SignInFragment
+    <string name="sign_in_title">Вход</string>
+    <string name="sign_in_email">E-mail</string>
+    <string name="sign_in_incorrect_email">Некорректный e-mail</string>
+    <string name="sign_in_password">Пароль</string>
+    <string name="sign_in_enter">Войти</string>
+    <string name="sign_in_to_sign_up">Регистрация</string>
+    <string name="sign_in_forgot_password">забыли пароль?</string>
+
+    //SignUpFragment
+    <string name="sign_up_title">Регистрация</string>
+    <string name="sign_up_first_name">Имя</string>
+    <string name="sign_up_last_name">Фамилия</string>
+    <string name="sign_up_email">E-mail</string>
+    <string name="sign_up_password">Пароль</string>
+    <string name="sign_up_registry">Зарегистрироваться</string>
+    <string name="sign_up_enter">Вход</string>
+
+    //PasswordRecoveryFragment
+    <string name="password_recovery_title">Восстановление пароля</string>
+    <string name="password_recovery_hint">Введите электронную почту,
+        которую вы использовали при регистрации, и мы вышлем на нее код для восстановления пароля
+    </string>
+    <string name="password_recovery_email">E-mail</string>
+    <string name="password_recovery_send">Отправить</string>
+    <string name="password_recovery_enter_code">Введите проверочный код</string>
+    <string name="password_recovery_enter_new_password">Введите новый пароль</string>
+    <string name="password_recovery_password">Пароль</string>
+    <string name="password_recovery_repeat_password">Повторите пароль</string>
+    <string name="password_recovery_save">Сохранить</string>
+
+    //MainFragment
+    <string name="main_title">Главная</string>
+
+    //Search
+    <string name="search_hint">Поиск блюд</string>
+
+    //MainMenu
+    <string name="main_menu_home">Главная</string>
+    <string name="main_menu_menu">Меню</string>
+    <string name="main_menu_favorites">Избранное</string>
+    <string name="main_menu_cart">Корзина</string>
+    <string name="main_menu_profile">Профиль</string>
+    <string name="main_menu_orders">Заказы</string>
+    <string name="main_menu_notifications">Уведомления</string>
+    <string name="main_menu_about_app">О приложении</string>
+
+    //MenuFragment
+    <string name="menu_title">Меню</string>
+
+    //FavoritesFragment
+    <string name="favorites_title">Избранное</string>
+
+    //NotificationsFragment
+    <string name="notifications_title">Уведомления</string>
+
+    //AboutAppFragment
+    <string name="about_app_title">О приложении</string>
+
+    //ProductFragment
+    <string name="product_add_to_cart"></string>
+    <string name="product_add_feedback">Отзывы</string>
+    <string name="product_add_add_feedback">Добавить отзыв</string>
+
+    //RatingDialog
+    <string name="rating_title">Оставить</string>
+    <string name="rating_hint">Введите отзыв</string>
+    <string name="rating_send">Отправить</string>
+
+    //CartFragment
+    <string name="cart_title">Корзина</string>
+    <string name="cart_enter_code">Введите промокод</string>
+    <string name="cart_apply">Применить</string>
+    <string name="cart_discount">Скидка %d $s</string>
+    <string name="cart_total">Итого</string>
+    <string name="cart_register_order">Оформить заказ</string>
+
+    /OrderRegistrationFragment
+    <string name="order_registration_title">Оформление заказа</string>
+    <string name="order_registration_address">Адрес:</string>
+    <string name="order_registration_edit">Редактировать</string>
+    <string name="order_registration_write">Написать</string>
+    <string name="order_registration_indicate_to_map">Указать на карте</string>
+
+    <string name="order_registration_entrance_number">Подъезд:</string>
+    <string name="order_registration_floor_number">Этаж:</string>
+    <string name="order_registration_apartment_number">Квартира:</string>
+    <string name="order_registration_intercom_number">Домофон:</string>
+    <string name="order_registration_comment">Комментарий:</string>
+    <string name="order_registration_register">Оформить заказ</string>
+
+    //AddressFragment
+    <string name="address_title">Указание адреса</string>
+    <string name="address_choose_address">Выбрать адрес</string>
+
+    //ProfileFragment
+    <string name="profile_title">Профиль</string>
+    <string name="profile_first_name">Имя</string>
+    <string name="profile_last_name">Фамилия</string>
+    <string name="profile_email">E-mail</string>
+    <string name="profile_incorrect_email">Некорректный e-mail</string>
+    <string name="profile_change_profile">Изменить</string>
+    <string name="profile_change_password">Сменить пароль</string>
+
+    //ChangePasswordDialog
+    <string name="change_password_title">Смена пароля</string>
+    <string name="change_password_old_password">Старый пароль</string>
+    <string name="change_password_new_password">Новый пароль</string>
+    <string name="change_password_save">Сохранить</string>
+
+    //OrdersFragment
+    <string name="orders_title">Заказы</string>
+    <string name="orders_actual">Актуальные</string>
+    <string name="orders_completed">Выполненные</string>
+
+    <string name="order_status_in_processing">В обработке</string>
+    <string name="order_status_delivered">Доставляется</string>
+    <string name="order_status_completed">Доставлен</string>
+
+    //OrdersDetailsFragment
+    <string name="order_details_title">Заказ № %s</string>
+    <string name="order_details_status">Статус:</string>
+    <string name="order_details_total_sum">Сумма:</string>
+    <string name="order_details_address">Адрес:</string>
+    <string name="order_details_date">Дата:</string>
+    <string name="order_details_cancel">Отменить заказ</string>
+    <string name="order_details_order_list">Состав заказа</string>
 </resources>
