@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_56"
+            android:layout_marginBottom="@dimen/margin_56"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ru.ar4i.delivery.InputView
+                android:id="@+id/ivEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ru.ar4i.delivery.InputView
+                android:id="@+id/ivPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_62"
+                android:layout_marginStart="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_30"
+                android:backgroundTint="@color/button"
+                android:text="@string/sign_in_enter"
+                android:textSize="@dimen/text_size_18"
+                app:cornerRadius="@dimen/radius_6" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_62"
+                android:layout_marginStart="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginEnd="@dimen/margin_30"
+                android:background="@drawable/button_background"
+                android:text="@string/sign_in_to_sign_up"
+                android:textSize="@dimen/text_size_18"
+                app:cornerRadius="@dimen/radius_6" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_40"
+            android:gravity="center"
+            android:text="@string/sign_in_forgot_password"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

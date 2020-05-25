@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputView">
+        <attr name="iv_tv_hint" format="string" />
+        <attr name="iv_et_hint" format="string" />
+        <attr name="iv_error" format="string" />
+    </declare-styleable>
+</resources>
