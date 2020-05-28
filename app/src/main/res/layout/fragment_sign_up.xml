@@ -15,60 +15,57 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_56"
             android:layout_marginBottom="@dimen/margin_46"
             android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ru.ar4i.delivery.InputView
+                android:id="@+id/ivFeirsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_et_hint="@string/sign_up_first_name"
+                app:iv_tv_hint="@string/sign_up_first_name" />
+
+            <ru.ar4i.delivery.InputView
+                android:id="@+id/ivLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iv_et_hint="@string/sign_up_last_name"
+                app:iv_tv_hint="@string/sign_up_last_name" />
+
+            <ru.ar4i.delivery.InputView
                 android:id="@+id/ivEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:iv_et_hint="@string/sign_in_email"
-                app:iv_tv_hint="@string/sign_in_email"/>
+                app:iv_et_hint="@string/sign_up_email"
+                app:iv_tv_hint="@string/sign_up_email" />
 
             <ru.ar4i.delivery.InputView
                 android:id="@+id/ivPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:iv_et_hint="@string/sign_in_password"
-                app:iv_tv_hint="@string/sign_in_password"/>
+                app:iv_et_hint="@string/sign_up_password"
+                app:iv_tv_hint="@string/sign_up_password" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnEnter"
+                android:id="@+id/btnRegistry"
                 style="@style/BaseButton.Primary"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_62"
                 android:layout_marginTop="@dimen/margin_40"
-                android:text="@string/sign_in_enter" />
+                android:text="@string/sign_up_registry" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnRegistry"
+                android:id="@+id/btnEnter"
                 style="@style/BaseButton.Secondary"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_62"
                 android:layout_marginTop="@dimen/margin_12"
-                android:text="@string/sign_in_to_sign_up" />
+                android:text="@string/sign_up_enter" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/tvForgotPassword"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_50"
-            android:layout_marginStart="@dimen/margin_30"
-            android:layout_marginEnd="@dimen/margin_30"
-            android:layout_marginBottom="@dimen/margin_30"
-            android:background="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:text="@string/sign_in_forgot_password"
-            android:textColor="@color/grey"
-            android:textSize="@dimen/text_size_18"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -7,4 +7,47 @@
         <item name="android:statusBarColor">@color/black_dark</item>
     </style>
 
+
+    <style name="BaseButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:layout_marginStart">@dimen/margin_30</item>
+        <item name="android:layout_marginEnd">@dimen/margin_30</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="cornerRadius">@dimen/radius_6</item>
+    </style>
+
+
+    <style name="BaseButton.Primary">
+        <item name="backgroundTint">@color/button</item>
+    </style>
+
+    <style name="BaseButton.Secondary">
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <style name="Input" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="Input.Code">
+        <item name="android:inputType">number</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+    </style>
+
+    <style name="Code" parent="Widget.MaterialComponents.TextView">
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:inputType">number</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+    </style>
+
 </resources>

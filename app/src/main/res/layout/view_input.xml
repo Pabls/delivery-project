@@ -13,8 +13,7 @@
         android:lines="1"
         android:paddingStart="@dimen/padding_30"
         android:textColor="@color/grey"
-        android:textSize="@dimen/text_size_12"
-        tools:text="@string/profile_email" />
+        android:textSize="@dimen/text_size_12" />
 
     <TextView
         android:id="@+id/tvError"
@@ -25,21 +24,18 @@
         android:lines="1"
         android:paddingEnd="@dimen/padding_30"
         android:textColor="@color/red"
-        android:textSize="@dimen/text_size_12"
-        tools:text="@string/profile_incorrect_email" />
+        android:textSize="@dimen/text_size_12" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etValue"
+        style="@style/Input"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_44"
         android:layout_gravity="bottom"
         android:layout_marginStart="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_30"
         android:layout_marginEnd="@dimen/margin_30"
         android:layout_marginBottom="@dimen/margin_8"
-        android:layout_marginTop="@dimen/margin_30"
-        android:background="@drawable/edit_text_background"
-        android:paddingStart="@dimen/padding_14"
-        android:textColorHint="@color/black_light"
-        tools:hint="@string/profile_email" />
+        android:paddingStart="@dimen/padding_14" />
 
 </merge>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/tvFirst"
+        style="@style/Code"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginStart="@dimen/margin_30"
+        android:layout_marginEnd="@dimen/margin_16"
+         />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        style="@style/Code"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_weight="1"
+         />
+
+    <TextView
+        android:id="@+id/tvThird"
+        style="@style/Code"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/height_44"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_weight="1"
+         />
+
+    <TextView
+        android:id="@+id/tvFourth"
+        style="@style/Code"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/height_44"
+
+        android:layout_weight="1"
+         />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:inputType="number"
+        android:maxLength="4"
+        android:maxLines="1" />
+
+</merge>
